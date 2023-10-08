@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/insane/ontologies/2023/9/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/insane/ontologies/2023/9/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/insane/ontologies/2023/9/untitled-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#abilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#gives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#agility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arcane_blink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arcane_boots"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#armor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#assault_cuiras"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blade_mail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blink_dagger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boots_of_bearing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boots_of_speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boots_of_travel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boots_of_travel_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dispercer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#drum_of_endurance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eaglesong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#energy_booster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eul_scepter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#force_boots"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gleipnir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#glimmers_cape"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#guardian_greaves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#heart_of_tarrasque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#heavens_halberd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intelligent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#invisibility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kaya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kaya_yasha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#magic_damage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#magic_resist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mechasm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#medalion_of_courage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#move_speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mystic_staff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#owerhelming_blink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phase_boots"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#point_booster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#power"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#power_threads"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reaver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sange_kaya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sange_yasha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shadow_amulet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shadow_blade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#silver_edge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#solar_crest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swift_blink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tranquil_boots"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vitality_booster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wind_lace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wind_waker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yasha"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#stats"/>
+        <NamedIndividual IRI="#agility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#arcane_blink"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#arcane_boots"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stats"/>
+        <NamedIndividual IRI="#armor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#assault_cuiras"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#blade_mail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#abilities"/>
+        <NamedIndividual IRI="#blink"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#blink_dagger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#boots_of_bearing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#boots_of_speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#boots_of_travel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#boots_of_travel_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#abilities"/>
+        <NamedIndividual IRI="#control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#dispercer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#drum_of_endurance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#eaglesong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#energy_booster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#eul_scepter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#force_boots"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#gleipnir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#glimmers_cape"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#guardian_greaves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#heart_of_tarrasque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#heavens_halberd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stats"/>
+        <NamedIndividual IRI="#hp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stats"/>
+        <NamedIndividual IRI="#intelligent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#abilities"/>
+        <NamedIndividual IRI="#invisibility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#kaya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#kaya_yasha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#abilities"/>
+        <NamedIndividual IRI="#magic_damage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#abilities"/>
+        <NamedIndividual IRI="#magic_resist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stats"/>
+        <NamedIndividual IRI="#mana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#mechasm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#medalion_of_courage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stats"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#mystic_staff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#owerhelming_blink"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#phase_boots"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#point_booster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stats"/>
+        <NamedIndividual IRI="#power"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#power_threads"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#reaver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#sange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#sange_kaya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#sange_yasha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#shadow_amulet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#shadow_blade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#silver_edge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#solar_crest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#swift_blink"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#tranquil_boots"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#vitality_booster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#wind_lace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#wind_waker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#yasha"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#arcane_blink"/>
+        <NamedIndividual IRI="#blink"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#arcane_blink"/>
+        <NamedIndividual IRI="#mystic_staff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#arcane_boots"/>
+        <NamedIndividual IRI="#boots_of_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#arcane_boots"/>
+        <NamedIndividual IRI="#energy_booster"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#assault_cuiras"/>
+        <NamedIndividual IRI="#armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#blade_mail"/>
+        <NamedIndividual IRI="#armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#blink_dagger"/>
+        <NamedIndividual IRI="#blink"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#boots_of_bearing"/>
+        <NamedIndividual IRI="#drum_of_endurance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#boots_of_bearing"/>
+        <NamedIndividual IRI="#tranquil_boots"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#boots_of_speed"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#boots_of_travel"/>
+        <NamedIndividual IRI="#boots_of_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#boots_of_travel_2"/>
+        <NamedIndividual IRI="#boots_of_travel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#dispercer"/>
+        <NamedIndividual IRI="#control"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#dispercer"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#drum_of_endurance"/>
+        <NamedIndividual IRI="#intelligent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#drum_of_endurance"/>
+        <NamedIndividual IRI="#power"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#eaglesong"/>
+        <NamedIndividual IRI="#agility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#energy_booster"/>
+        <NamedIndividual IRI="#mana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#eul_scepter"/>
+        <NamedIndividual IRI="#control"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#eul_scepter"/>
+        <NamedIndividual IRI="#intelligent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#eul_scepter"/>
+        <NamedIndividual IRI="#wind_lace"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#force_boots"/>
+        <NamedIndividual IRI="#hp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#force_boots"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#gleipnir"/>
+        <NamedIndividual IRI="#control"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#glimmers_cape"/>
+        <NamedIndividual IRI="#shadow_amulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#guardian_greaves"/>
+        <NamedIndividual IRI="#arcane_boots"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#guardian_greaves"/>
+        <NamedIndividual IRI="#mechasm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#heart_of_tarrasque"/>
+        <NamedIndividual IRI="#reaver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#heart_of_tarrasque"/>
+        <NamedIndividual IRI="#vitality_booster"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#heavens_halberd"/>
+        <NamedIndividual IRI="#control"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#kaya"/>
+        <NamedIndividual IRI="#intelligent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#kaya"/>
+        <NamedIndividual IRI="#magic_damage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#kaya"/>
+        <NamedIndividual IRI="#magic_resist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#kaya_yasha"/>
+        <NamedIndividual IRI="#kaya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#kaya_yasha"/>
+        <NamedIndividual IRI="#yasha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#mechasm"/>
+        <NamedIndividual IRI="#hp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#medalion_of_courage"/>
+        <NamedIndividual IRI="#armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#mystic_staff"/>
+        <NamedIndividual IRI="#intelligent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#owerhelming_blink"/>
+        <NamedIndividual IRI="#blink"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#owerhelming_blink"/>
+        <NamedIndividual IRI="#reaver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#phase_boots"/>
+        <NamedIndividual IRI="#boots_of_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#point_booster"/>
+        <NamedIndividual IRI="#hp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#point_booster"/>
+        <NamedIndividual IRI="#mana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#power_threads"/>
+        <NamedIndividual IRI="#agility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#power_threads"/>
+        <NamedIndividual IRI="#intelligent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#power_threads"/>
+        <NamedIndividual IRI="#power"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#power_threads"/>
+        <NamedIndividual IRI="#boots_of_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#reaver"/>
+        <NamedIndividual IRI="#power"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#sange"/>
+        <NamedIndividual IRI="#power"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#sange_kaya"/>
+        <NamedIndividual IRI="#kaya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#sange_kaya"/>
+        <NamedIndividual IRI="#sange"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#sange_yasha"/>
+        <NamedIndividual IRI="#sange"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#sange_yasha"/>
+        <NamedIndividual IRI="#yasha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#shadow_amulet"/>
+        <NamedIndividual IRI="#invisibility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#shadow_blade"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#shadow_blade"/>
+        <NamedIndividual IRI="#shadow_amulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#silver_edge"/>
+        <NamedIndividual IRI="#shadow_blade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#solar_crest"/>
+        <NamedIndividual IRI="#armor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#solar_crest"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#swift_blink"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#swift_blink"/>
+        <NamedIndividual IRI="#blink_dagger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#swift_blink"/>
+        <NamedIndividual IRI="#eaglesong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#tranquil_boots"/>
+        <NamedIndividual IRI="#boots_of_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#vitality_booster"/>
+        <NamedIndividual IRI="#hp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#wind_lace"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#wind_waker"/>
+        <NamedIndividual IRI="#eul_scepter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#yasha"/>
+        <NamedIndividual IRI="#agility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#gives"/>
+        <NamedIndividual IRI="#yasha"/>
+        <NamedIndividual IRI="#move_speed"/>
+    </ObjectPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#gives"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#needs"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#gives"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gives"/>
+        <Class IRI="#abilities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gives"/>
+        <Class IRI="#stats"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
