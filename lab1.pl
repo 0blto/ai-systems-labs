@@ -4,6 +4,7 @@
 invisibility(shadow_amulet).
 
 /*move_speed(Arg). - Arg дает скорость*/
+move_speed(yasha).
 move_speed(boots_of_speed).
 move_speed(silver_edge).
 move_speed(shadow_blade).
@@ -11,7 +12,6 @@ move_speed(solar_crest).
 move_speed(force_boots).
 move_speed(dispercer).
 move_speed(swift_blink).
-move_speed(yasha).
 move_speed(wind_lace).
 
 /*control(Arg). - Arg дает разного рода контроль над соперниками*/
@@ -33,11 +33,11 @@ power(reaver).
 power(drum_of_endurance).
 
 /*intelligent(Arg). - Arg дает интеллект*/
-intelligent(kaya).
-intelligent(eul_scepter).
-intelligent(power_treads).
-intelligent(mystic_staff).
-intelligent(drum_of_endurance).
+intelligence(kaya).
+intelligence(eul_scepter).
+intelligence(power_treads).
+intelligence(mystic_staff).
+intelligence(drum_of_endurance).
 
 /*agility(Arg). - Arg дает ловкость*/
 agility(yasha).
@@ -46,7 +46,6 @@ agility(eaglesong).
 
 /*fast_movement(Arg). - Arg дает быстрое перемещение в другую точку*/
 fast_movement(blink).
-fast_movement(swift_blink).
 
 /*hp(Arg). - Arg дает хп или хил*/
 hp(vitality_booster).
@@ -63,8 +62,6 @@ magic_resist(kaya).
 
 /*magic_damage(Arg). - доп урон от магии*/
 magic_damage(kaya).
-magic_damage(kaya_sange).
-magic_damage(kaya_yasha).
 
 
 
@@ -103,16 +100,23 @@ needs(wind_lace, tranquil_boots).
 needs(drum_of_endurance, boots_of_bearing).
 
 
-
+/*раздача бафов предметов родителей*/
 move_speed(Arg) :- needs(wind_lace, Arg); needs(boots_of_speed, Arg); needs(yasha, Arg); (needs(boots_of_speed, X), needs(X, Arg); needs(wind_lace, X), needs(X, Arg)).
 fast_movement(Arg) :- needs(blink, Arg).
-magic_resist(Arg) :- needs(kaya).
+magic_resist(Arg) :- needs(kaya, Arg).
+magic_damage(Arg) :- needs(kaya, Arg).
 invisibility(Arg) :- needs(shadow_amulet, Arg); (needs(shadow_amulet, X), needs(X, Arg)).
-mana(Arg) :- needs(energy_booster, Arg); needs(mystic_staff, Arg); needs(point_booster, Arg), needs(kaya, Arg).
-hp(Arg) :- needs(reaver, Arg); needs(vitality_booster, Arg); needs(point_booster, Arg); needs(tranquil_boots, Arg); needs(mechasm, Arg); needs(sange, Arg).
+mana(Arg) :- needs(energy_booster, Arg); needs(mystic_staff, Arg); needs(point_booster, Arg); needs(kaya, Arg); (needs(point_booster, X), needs(X, Arg); needs(energy_booster, X), needs(X, Arg)).
+hp(Arg) :- needs(reaver, Arg); needs(vitality_booster, Arg); needs(point_booster, Arg); needs(tranquil_boots, Arg); needs(mechasm, Arg).
 power(Arg) :- needs(reaver, Arg); needs(sange, Arg).
-intelligent(Arg) :- needs(mystic_staff, Arg); needs(kaya, Arg); needs(drum_of_endurance, Arg), needs(eul_scepter, Arg).
+intelligence(Arg) :- needs(mystic_staff, Arg); needs(kaya, Arg); needs(drum_of_endurance, Arg); needs(eul_scepter, Arg).
 agility(Arg) :- needs(eaglesong, Arg); needs(yasha, Arg).
+
 /*
-agility(Arg) :- agility(X), needs(X, Arg).
+Запросы
+needs(eul_scepter, X).
+move_speed(X), magic_damage(X), magic_resist(X).
+magic_damage(X), not(power(X)), needs(_, X).
+move_speed(X), hp(X), needs(_, X), not(mana(X)).
+move_speed(X), not(needs(_, X)), hp(X).
 */
